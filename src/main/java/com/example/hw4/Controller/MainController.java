@@ -81,6 +81,8 @@ public class MainController {
     public ModelAndView delete(@PathVariable("old") String old){
         ModelAndView mv = new ModelAndView("redirect:/");
         ARepo.deleteById(old);
+
         return mv;
+        //final check
     }
 }
